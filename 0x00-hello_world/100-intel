@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel $CFIL.c
+gcc -S -masm=inte -Og -fverbose-asm $CFIL.c
