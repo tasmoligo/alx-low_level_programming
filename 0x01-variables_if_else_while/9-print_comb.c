@@ -1,21 +1,21 @@
 #include <stdio.h>
 /**
- * main - possible comboof single-digit numbers
+ * main - prints combo of single-digit numbers
  * Return: 0
  */
 int main(void)
 {
-	int n;
+	int a;
 
-	for (n = 48; n < 58; n++)
+	for (a = 48; a < 58; a++)
 	{
-		putchar(n);
+		putchar(a);
 	}
-		if (n != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+	if (a != 57)
+	{
+		putchar(',');
+		putchar(' ');
+	}
 	putchar('\n');
 	return (0);
 }
