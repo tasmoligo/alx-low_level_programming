@@ -1,16 +1,16 @@
 #include <stdio.h>
 /**
- * main - prints all possible combo of two digit numbers
+ * main - prints different combo of two digits
  * Return: 0
  */
 int main(void)
 {
 	int u = '0';
-	int t = '0';
+	int t = '9';
 
-	for (u = '0'; u <= '9'; u++)
+	for (t = '0'; t <= '9'; t++)
 	{
-		for (t = '0'; t <= '9'; t++)
+		for (u = '0'; u <= '9'; u++)
 		{
 			if (!((u == t) || (t > u)))
 			{
