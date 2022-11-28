@@ -1,9 +1,27 @@
 #include <stdlib.h>
 #include "dog.h"
 
-char *_strcpy(char *dest, const char *src);
 int _strlen(char *str);
+char *_strcpy(char *dest, const char *src);
 dog_t *new_dog(char *name, float age, char *owner);
+
+/**
+  * _strlen - prints the length of the string
+  * @str: the string to be counted
+  *
+  *Return: length of string
+  */
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (*str++)
+	{
+		len++;
+	}
+	return (len);
+}
+
 /**
   * _strcpy - copies string from source to destination
   * @src: the source
@@ -22,23 +40,6 @@ char *_strcpy(char *dest, const char *src)
 		dest++;
 	}
 	return (dest_src);
-}
-
-/**
-  * _strlen - prints the length of the string
-  * @str: the string to be counted
-  *
-  *Return: length of string
-  */
-int _strlen(char *str)
-{
-	int len = 0;
-
-	while (*str++)
-	{
-		len++;
-	}
-	return (len);
 }
 
 /**
