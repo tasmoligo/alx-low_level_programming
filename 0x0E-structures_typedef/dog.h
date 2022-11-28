@@ -1,5 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
+
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
   * struct dog - a new typr that performs operations
   * @name: the name
