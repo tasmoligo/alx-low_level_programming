@@ -31,15 +31,14 @@ int _strlen(char *str)
   */
 char *_strcpy(char *dest, const char *src)
 {
-	char *dest_src = dest;
+	int i;
 
-	while (*src != '\0')
+	for (i = 0; src[i]; i++)
 	{
-		*dest = *src;
-		src++;
-		dest++;
+		dest[i] = src[i];
 	}
-	return (dest_src);
+	dest[i] = '\0';
+	return (dest);
 }
 
 /**
