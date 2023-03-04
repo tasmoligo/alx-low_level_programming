@@ -5,10 +5,11 @@
   */
 int main(void)
 {
-	int num;
+	int number;
 
 	srand(time(0));
-	num = rand();
-	printf("%i\n", num);
+
+	number = rand();
+	printf("%d\n", number);
 	return (0);
 }
