@@ -9,7 +9,7 @@ it is a way of automating software building procedure and other complex tasks wi
 
 *targets ...: prerequisites ...*  
 
-	*recipe*  
+	recipe  
 	...  
 	...    
 
