@@ -7,7 +7,7 @@ it is a way of automating software building procedure and other complex tasks wi
 
 **Syntax of a makefile rule**    
 
-**target: prerequisites
+**target: prerequisites  
 	commands**
 
 - *targets*: are file names, separated by spaces. Typically, there is only one per rule.  
