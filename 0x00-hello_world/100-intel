@@ -1,2 +1,7 @@
 #!/bin/bash
-gcc -S -masm=inte -Og -fverbose-asm $CFIL.c
+
+CFILE=("$@")
+
+for arg in "${CFILE[@]}"; do
+	gcc -S -masm=intel -Og -fverbose-asm "$arg"
+done
