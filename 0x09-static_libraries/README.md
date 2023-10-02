@@ -6,10 +6,10 @@
 <p>The command to create a static library is:</p>
 <p>	gcc -c test.c -o test.o</p>
 <p>If we have several c files, we can do it as so</p>
-<p>	gcc -c \*.c</p>
+<p>	gcc -c *.c</p>
 <p>	ar rcs mylib.a test.o</p>
 <p><b>OR</b></p>
-<p>	ar mylib.a \*.o</p>
+<p>	ar mylib.a *.o</p>
 <p>To index the library in order to speed up referencing, use:</p>
 <p>	ranlib mylib.a</p>
 <p>To see the content of our library:</p>
