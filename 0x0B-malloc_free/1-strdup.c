@@ -23,6 +23,10 @@ char *_strdup(char *str)
 	}
 	for (index = 0; str[index] != '\0'; index++)
 	{
+		if (str_copy[index] < str[index])
+		{
+			return (NULL);
+		}
 		str_copy[index] = str[index];
 	}
 	return (str_copy);
