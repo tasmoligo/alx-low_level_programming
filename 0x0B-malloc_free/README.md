@@ -9,8 +9,8 @@
 #include &ltstdlib.h&gt<br>
 // main - explaining malloc()<br>
 int main(void)<br>
-{<br> &ensp
-    char *str; // pointer to hold address of memory block
+{<br>
+        char *str; // pointer to hold address of memory block
 
     str = (char *) malloc(sizeof(char) * 98); // Allocates 98 bytes of memory
     if (str == NULL)
