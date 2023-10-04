@@ -6,9 +6,9 @@
 <p>A code where malloc is used is as illustrated below:</p>
 <p>
 #include &ltstdio.h&gt<br>
-#include &ltstdlib.h&gt
-// main - explaining malloc()
-int main(void)
+#include &ltstdlib.h&gt<br>
+// main - explaining malloc()<br>
+int main(void)<br>
 {
     char *str; // pointer to hold address of memory block
 
