@@ -1,12 +1,12 @@
 <h1>Automatic and dynamic allocation (malloc)</h1>
 <p>C is a structured language and therefore has some fixed programming rules. One of them is changing the size of an array. An array is a        sequence of characters stored in a contiguous memory block.</p>
 <p>To declare an array, we have to know its size. But what about a situation when the size of the array can only be determined at runtime or     compilation. That is where malloc comes in.</p>
-<p>Malloc() is a function found in the C standard library \<stdlib.h\>.</p>
+<p>Malloc() is a function found in the C standard library &ltstdlib.h&gt.</p>
 <p>The malloc() function reserves a block of memory of the specified number of bytes from the heap and returns a void pointer which can be casted into pointers of any form.</p>
 <p>A code where malloc is used is as illustrated below:</p>
 <p>
-#include <stdio.h>
-#include <stdlib.h>
+#include &ltstdio.h&gt
+#include &ltstdlib.h&gt
 // main - explaining malloc()
 int main(void)
 {
