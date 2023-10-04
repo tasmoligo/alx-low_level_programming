@@ -9,7 +9,7 @@
 #include &ltstdlib.h&gt<br>
 // main - explaining malloc()<br>
 int main(void)<br>
-{<br>
+{<br>$#9$#9
     char *str; // pointer to hold address of memory block
 
     str = (char *) malloc(sizeof(char) * 98); // Allocates 98 bytes of memory
