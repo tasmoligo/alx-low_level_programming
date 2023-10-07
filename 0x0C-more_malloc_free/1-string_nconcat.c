@@ -23,7 +23,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	lenStr = _len(s1) + _len(s2);
+	if (n >= _len(s2))
+	{
+		lenStr = _len(s1) + _len(s2);
+	}
+	else
+	{
+		lenStr = _len(s1) + n;
+	}
 	ptr = malloc(sizeof(char) * lenStr);
 	if (ptr == NULL)
 	{
