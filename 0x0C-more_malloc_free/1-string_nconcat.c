@@ -1,18 +1,6 @@
 #include "main.h"
 
-/**
-  * _len - calculates the length of a string
-  * @s: the string
-  * Return: the length of the string
-  */
-int _len(char *s)
-{
-	int i, len = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-		len++;
-	return (len);
-}
+unsigned int _len(char *s);
 
 /**
   * string_nconcat - concatenates two strings
@@ -41,13 +29,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; i < _len(s1); i++)
 	{
 		ptr[i] = s1[i];
 	}
-	if (n == 0)
+	if (n >= _len(s2))
 	{
-		for (j = 0; s2[j] != '\0'; j++, i++)
+		for (j = 0; j < _len(s2); j++, i++)
 		{
 			ptr[i] = s2[j];
 		}
@@ -61,4 +49,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	ptr[i] = '\0';
 	return (ptr);
+}
+
+/**
+  * _len - calculates the length of a string
+  * @s: the string
+  * Return: the length of the string
+  */
+unsigned int _len(char *s)
+{
+	unsigned int i, len = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+		len++;
+	return (len);
 }
