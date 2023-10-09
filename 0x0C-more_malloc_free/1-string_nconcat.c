@@ -53,7 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
   */
 unsigned int _len(char *s)
 {
-	unsigned int i, len = 0;
+	unsigned int i;
 
 	for (i = 0; s[i] != '\0'; i++)
 		;
