@@ -56,6 +56,6 @@ unsigned int _len(char *s)
 	unsigned int i, len = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
-		len++;
-	return (len);
+		;
+	return (i);
 }
