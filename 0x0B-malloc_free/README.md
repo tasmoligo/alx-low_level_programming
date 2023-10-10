@@ -26,8 +26,8 @@ int main(void)<br>
 <p>On error, malloc returns NULL as illustrated in the code above<br>
 <p>When using malloc, it is good practice to free the allocated memory by calling the free() function as shown in the program above. It serves   the purpose of de-allocating the memory and returning it to the operating system.</p>
 <p><b>References:</b></p>
-<li>
-<ul>https://www.geeksforgeeks.org</ul>
-<ul>https://www.programiz.com</ul>
-<ul>https://intranet.alxswe.com/</ul>
-</li>
+<ul>
+<li>https://www.geeksforgeeks.org</li>
+<li>https://www.programiz.com</li>
+<li>https://intranet.alxswe.com/</li>
+</ul>
