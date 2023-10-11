@@ -6,12 +6,9 @@
 
 /**
   * struct dog - the dog structure
-  * @name : the pointer to locate the dog's name
-  * @owner : the pointer to locate the dog's owner
-  * @age : member to hold the dog's age
-  *
-  * Description: This structure holds the identity of a dog.
-  * 		With it, the name, age and owner of the dog can be known.
+  * @name: the pointer to locate the dog's name
+  * @age: member to hold the dog's age
+  * @owner: the pointer to locate the dog's owner
   */
 struct dog
 {
