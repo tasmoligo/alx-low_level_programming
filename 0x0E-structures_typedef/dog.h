@@ -6,9 +6,9 @@
 
 /**
   * struct dog - the dog structure
-  * @nane : the pointer to locate the dogs n' ame
-  * @owner : the pointer to locate the dogs ' owner
-  * @age : member to hold the dogs a' ge
+  * @nane : the pointer to locate the dog's name
+  * @owner : the pointer to locate the dog's owner
+  * @age : member to hold the dog's age
   *
   * Description: This structure holds the identity of a dog.
   * 		With it, the name, age and owner of the dog can be known.
