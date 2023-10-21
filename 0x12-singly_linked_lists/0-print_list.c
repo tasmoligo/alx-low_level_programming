@@ -9,15 +9,11 @@ size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
 
-	if (h->next == NULL)
-	{
-		return (i);
-	}
 	while (h != NULL)
 	{
 		if (h->str == NULL)
 		{
-			printf("[0] (nil)\n");
+			printf("[%d] (%s)\n", 0, "nil");
 		}
 		else
 		{
