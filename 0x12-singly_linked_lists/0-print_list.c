@@ -2,7 +2,7 @@
 
 /**
   * print_list - prints all the elements of a list_t list
-  * @h: the pointer to the nodes 
+  * @h: the pointer to the nodes
   * Return: number of nodes
   */
 size_t print_list(const list_t *h)
@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str == NULL)
 		{
-			printf("[%u] (%s)\n", 0, "nil");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
