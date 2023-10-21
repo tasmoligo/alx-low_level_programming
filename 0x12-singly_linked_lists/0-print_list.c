@@ -9,6 +9,10 @@ size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
 
+	if (h->next == NULL)
+	{
+		return (i);
+	}
 	while (h != NULL)
 	{
 		if (h->str == NULL)
