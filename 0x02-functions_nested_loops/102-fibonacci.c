@@ -6,21 +6,21 @@
   */
 int main(void)
 {
-	unsigned int n1 = 1, n2 = 2, num, sum = n1 + n2;
+	unsigned long int n1 = 1, n2 = 2, num = 0, sum = n1 + n2;
 
-	printf("%d, %d, ", n1, n2);
+	printf("%lu, %lu, ", n1, n2);
 	while (num < 48)
 	{
 		if (num != 47)
 		{
-			printf("%d, ", sum);
+			printf("%lu, ", sum);
 			n1 = n2;
 			n2 = sum;
 			sum = n1 + n2;
 		}
 		else
 		{
-			printf("%d\n", sum);
+			printf("%lu\n", sum);
 		}
 		num++;
 	}
