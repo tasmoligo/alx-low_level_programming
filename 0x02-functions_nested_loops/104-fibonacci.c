@@ -6,22 +6,23 @@
   */
 int main(void)
 {
-	unsigned long int n1 = 1, n2 = 2, num = 0, sum = n1 + n2;
+	unsigned long int n1 = 1, n2 = 2, sum;
+	int num = 2;
 
 	printf("%lu, %lu, ", n1, n2);
-	while (num < 96)
+	while (num < 98)
 	{
-		if (num != 95)
+		sum = n1 + n2;
+		if (num < 97)
 		{
 			printf("%lu, ", sum);
-			n1 = n2;
-			n2 = sum;
-			sum = n1 + n2;
 		}
 		else
 		{
 			printf("%lu\n", sum);
 		}
+		n1 = n2;
+		n2 = sum;
 		num++;
 	}
 
