@@ -3,7 +3,7 @@
 /**
  * print_most_numbers - prints from 0 to 9
  * except 2 and 4
- * Return: 0
+ * Return: nothing
  */
 void print_most_numbers(void)
 {
@@ -12,7 +12,9 @@ void print_most_numbers(void)
 	while (a <= 9)
 	{
 		if (a != 2 && a != 4)
+		{
 			_putchar(a + '0');
+		}
 		a++;
 	}
 	_putchar('\n');
