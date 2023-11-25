@@ -3,7 +3,9 @@
 
 /**
  * _putchar - displays character to standard output
- * Return: 1
+ * @c: The character to print
+ * Return: 1 on success
+ * 	   On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c)
 {
