@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints fizzbuzz
+ * main - driver function to print fizzbuzz
  *
  * Return: 0
  */
@@ -11,6 +11,10 @@ int main(void)
 
 	for (n = 1; n <= 100; n++)
 	{
+		if (n == 100)
+		{
+			printf("Buzz\n");
+		}
 		if ((n % 3 == 0) && (n % 5 == 0))
 		{
 			printf("FizzBuzz ");
@@ -28,7 +32,6 @@ int main(void)
 			printf("%d ", n);
 		}
 	}
-	printf("\n");
 
 	return (0);
 }
